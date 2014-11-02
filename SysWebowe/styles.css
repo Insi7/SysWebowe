@@ -1,0 +1,206 @@
+/* External style sheet */
+
+h1      {text-shadow: -10px 10px 6px dimgrey;
+        font-size: 400%;}
+div     {border: 3px solid navy;
+        padding: 5px 20px;
+        width: 200px;
+        text-align: center;
+        border-radius: 50px;
+        margin-bottom: 20px;
+        box-shadow: 25px 25px 50px dimgrey;
+        background: hsla(250, 50%, 50%, 0.5);}
+        /*background: rgba(255, 0, 0, 0.5);}  */
+.gradl   {width: 210px;
+        height: 210px;
+        border: 3px solid navy;
+        padding: 5px 20px;
+        text-align: center;
+        background: linear-gradient(90deg, white 15%, lightsteelblue 50%, navy 75%);}
+.gradr  {width: 210px;
+        height: 210px;
+        border: 3px solid navy;
+        padding: 5px 20px;
+        text-align: center;
+        background: radial-gradient(yellow, red);}
+
+
+/*LISTA 1*/
+.floated    { background-color: cornflowerblue;
+    color: blanchedalmond;
+    font-size: 0.75em;
+    padding: .5em;
+    margin-right: .5em;
+    margin-bottom: .5em;
+    float: left;
+    text-align: left;
+    width: 30%;
+}
+
+#identyfikator {text-decoration: underline;}
+
+
+.text_change_1 {font-size: 30px;}
+.text_change_2 {font-size: 1.5em;}
+.text_change_3 {font-size: 120%;}
+.text_format_1
+{
+    font-weight: bold;
+    font-style: italic;
+    font-family: tahoma, geneva, sans-serif ;
+    font-size: 140%;
+}
+
+.super         { position: relative;
+    top: -1ex; }
+
+
+/*7. Formatowanie tekstu + szerokość*/
+.tst       {font-weight: bold;
+        font-style: italic;
+        font-variant: small-caps;
+        font-size: 100%;
+        line-height: 200%;
+        font-family: tahoma, geneva, sans-serif;}
+/*8. Regula CSS z border*/
+.thick  {border-width: thick;}
+.groove {border-style: groove;}
+.red    {border-color: red;}
+/*9. Stylowanie tabel*/
+
+
+body     {background-image: url(Images/KappaBig.png);
+          background-position: bottom right;
+          background-repeat: no-repeat;
+          background-attachment: scroll;}
+          
+table   {border: 2px solid black;
+        border-collapse: separate;
+        width: 60%;}
+td      {border: 2px solid black;
+        text-align: right;
+        padding: 10px;
+        background-color: white;}
+th      {border: 2px solid black;
+        background-color: white;}
+
+/*10. Reguly CSS wykorzystujace wartosci atrybutow znacznikow */
+.big_image  {width: 248px;
+            height: 292px;}
+.small_image{width: 62px;
+            height: 73px;}
+/*11. @media */
+@media all
+{
+    body    {background-color: lightgrey;}
+}
+@media print
+{
+    body    {background-color: white;}
+}
+/*12. pseudo klasy*/
+.lnk:link      {color: red;}
+.lnk:visited   {color: red;}
+.lnk:hover     {text-decoration: none;}
+.lnk:active    {color: darkred;}
+input[type="radio"]:checked  {margin-left: 10px;}
+input[type="text"]:disabled { background: lightblue; }
+p:empty {content: "This paragraph was empty";}
+input:enabled   {color: blue;}
+.tst:first-child i {background-color: yellow;}
+.tst:last-child i {background-color: gold;}
+.tst:nth-child(2n+1) {background-color: violet;}
+.tst:nth-last-child(3n+1) {background-color: brown;}
+.tst:only-child    {background-color: green;}
+.red_focus:focus    {color: red;}
+.tst:last-of-type {font-size: 20px;}
+.tst:not(p)     {font-size: 30px;}
+.req:required  {background-color: red;}
+:target     {color: red;}
+/*13. Drop-Down Menu*/
+nav ul ul
+{
+        display: none;
+}
+        nav ul li:hover > ul
+        {
+                display: block;
+        }
+nav ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-table;
+
+}
+    nav ul:after
+    {
+        content: "";
+        clear: both;
+        display: block;
+    }
+nav ul li
+{
+    float: left;
+    background-color: blue;
+}
+    nav ul li:hover
+    {
+        background-color: royalblue;
+    }
+        nav ul li:hover a
+        {
+            text-decoration: none;
+        }
+    nav ul li a
+    {
+        font-size: 125%;
+        font-weight: bold;
+        font-style: italic;
+        border: 1px solid;
+        border-color: darkblue;
+        display: block;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+nav ul ul
+{
+    background-color: darkgrey;
+    position: absolute;
+    top: 100%;
+}
+    nav ul ul li
+    {
+        float: none;
+        background-color: blue;
+        position: relative;
+    }
+        nav ul ul li a
+        {
+            padding: 15px 40px;
+            color: white;
+        }
+            nav ul ul li a:hover
+            {
+                background-color: royalblue;
+            }
+nav ul ul ul
+{
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="description" content="Website  part1">
+        <meta name="keywords" content="Telephone, Phone, Mobile Phone, Smartphone, Cell Phone, iPhone, Apple,
+                    Samsung, LG, Nokia, Sony, Blackberry, parameters, design">
+        <meta name="author" content="Jakub Jendrysik, Marcin Pyszel">
+        <title>Website Survey 1</title>
+        <style type="text/css">
+            body    {   font-size: 1.1em;
+                        background-color: cornsilk;
+                        background-image: url(Images/KappaSmall.png);
+                        background-position: top right;
+                        background-repeat: repeat-y;
+                        background-attachment: fixed;
+                    }
+        </style>
+    </head>
+
+    <body>
+        <h1>Website survey 1</h1>
+        <p></p>
+        <form action="Survey2.html" autocomplete="on">
+            <p>
+                <label>First name:
+                    <input type="text" id="firstName" autofocus /> (First name)
+                </label>
+            </p>
+            <p>
+                <label>Last name:
+                    <input class="req" type="text" id="lastName" required /> (Last name)
+                </label>
+            </p>
+            <p>
+                <label>Email:
+                    <input class="red_focus" type="email" required /> (name@domain.com)
+                </label>
+            </p>
+            <p>
+                <label for="txtList">Birth Month:
+                    <input type="text" id="txtList" list="months"/>
+                    <datalist id="months">
+                        <option value="January"></option>
+                        <option value="February"></option>
+                        <option value="March"></option>
+                        <option value="April"></option>
+                        <option value="May"></option>
+                        <option value="June"></option>
+                        <option value="July"></option>
+                        <option value="August"></option>
+                        <option value="September"></option>
+                        <option value="October"></option>
+                        <option value="November"></option>
+                        <option value="December"></option>
+                    </datalist>
+                </label>
+            </p>
+            <label>Tel:
+                <input type="tel" pattern="\d{3}-\d{3}-\d{3}"/> (###-###-###)
+            </label>
+
+            <p>
+                <label>Rate out site:
+                    <select name="rating">
+                        <option selected>Awesome</option>
+                        <option>Very good</option>
+                        <option>Good</option>
+                        <option>Average</option>
+                        <option>Bad</option>
+                        <option>Very bad</option>
+                        <option>Awful</option>
+                    </select>
+                </label>
+            </p>
+
+            <p>
+                <strong>Sex:</strong><br>
+
+                <label>Male <input name="yoursex" type="radio" value="search engine" checked></label>
+                <label>Female <input name="yoursex" type="radio" value="link"></label>
+            </p>
+
+            <p>
+                <input type="submit" value="Continue" />
+                <input type="reset" value="Clear" />
+            </p>
+        </form>
+
+
+        <p>
+            <a href="Main.html">&lt;~~ BACK TO MENU</a>
+        </p>
+
+    </body>
+</html>
